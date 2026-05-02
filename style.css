@@ -41,5 +41,47 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: underline;
 }
+.hero {
+    height: calc(100vh - 100px); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.hero-content{
+    display: flex;
+    flex-direction: column; /* Aligne slogan et bouton l'un au-dessus de l'autre */
+    align-items: center;
+    gap: 30px; /* Espace entre le slogan et le bouton */
+}
 
+.hero-content{
+    color: #ffffff;
+    font-size: 25px; /* Taille imposante pour l'impact */
+    text-transform: uppercase;
+    letter-spacing: 5px; /* Aspect luxueux / premium */
+    font-weight: 300; /* Un peu plus fin pour le côté élégant */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.btn-shop {
+    
+    background-color: #e0e0e0; 
+    color: #003366; 
+    padding: 18px 50px;
+    border-radius: 50px; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.btn-shop:hover {
+    background-color: #ffffff;
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
 
