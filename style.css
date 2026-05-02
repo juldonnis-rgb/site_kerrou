@@ -3,12 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-header {
-    
+body{
+    background-image: url('banniere.png');
+    background-size: cover;
+}
+.header {
    
-    padding: 10px 0;
-
+    display: flex;
+    justify-content: space-between;
 }
 .logo{   
     height: 80px;
@@ -18,27 +20,20 @@ header {
     background-repeat: no-repeat;
 
 }
-nav {
-    align-items: flex-start;
-    display: flex;
-    justify-content: space-between;
-    
-}
+
+
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: flex-end;
-    
-   
+    margin:20px;
 }
 
 nav ul li {
-    margin: 0 15px;
-    
+    padding: 15px;
 }
 
 nav ul li a {
-     color: #000000;
+    color: #ffffff;
     text-decoration: none;
     font-size: 18px;
 }
