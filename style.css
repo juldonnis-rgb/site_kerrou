@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url('banniere.png');
+    
     background-size: cover;
 }
 .header {
@@ -85,3 +85,14 @@ nav ul li a:hover {
     box-shadow: 0 6px 20px rgba(0,0,0,0.4);
 }
 
+.back-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; /* Place la vidéo derrière tout le monde */
+    object-fit: cover; /* Important : la vidéo remplit tout l'écran sans se déformer */
+}
