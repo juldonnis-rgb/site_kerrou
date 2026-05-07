@@ -96,3 +96,80 @@ nav ul li a:hover {
     z-index: -1; /* Place la vidéo derrière tout le monde */
     object-fit: cover; /* Important : la vidéo remplit tout l'écran sans se déformer */
 }
+
+/* Media Queries pour la responsivité */
+
+/* Tablettes (max-width: 768px) */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .logo {
+        height: 60px;
+        width: 120px;
+        margin-bottom: 10px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0;
+    }
+    
+    nav ul li {
+        padding: 10px;
+    }
+    
+    nav ul li a {
+        font-size: 16px;
+    }
+    
+    .hero-content h1 {
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+    
+    .btn-shop {
+        padding: 15px 40px;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+}
+
+/* Mobiles (max-width: 480px) */
+@media (max-width: 480px) {
+    .header {
+        padding: 5px;
+    }
+    
+    .logo {
+        height: 50px;
+        width: 100px;
+    }
+    
+    nav ul li {
+        padding: 8px;
+    }
+    
+    nav ul li a {
+        font-size: 14px;
+    }
+    
+    .hero-content h1 {
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+    
+    .btn-shop {
+        padding: 12px 30px;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+    
+    .hero-content {
+        gap: 20px;
+    }
+}
